@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDrive – Premium Car Store</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            width: 100%;
+            padding: 20px 6%;
+            background: #1a1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h2 {
+            color: #00aaff;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #00aaff;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: #00aaff;
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* HERO */
+        .hero {
+            height: 85vh;
+            padding: 0 6%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            color: #003148;
+        }
+
+        .hero-text p {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #444;
+        }
+
+        .hero img {
+            width: 50%;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        /* CARS SECTION */
+        .cars {
+            padding: 70px 6%;
+            text-align: center;
+        }
+
+        .cars h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #003148;
+        }
+
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .car-card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .car-card h3 {
+            margin: 10px 0 5px;
+            color: #003148;
+        }
+
+        /* TESTIMONIAL */
+        .testimonial {
+            padding: 70px 6%;
+            background: #e6f7ff;
+            text-align: center;
+        }
+
+        .testimonial h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #003148;
+        }
+
+        .test-box {
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        /* CONTACT */
+        .contact {
+            padding: 70px 6%;
+            text-align: center;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin: 8px 0;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2>AutoDrive</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#cars">Cars</a>
+            <a href="#testimonial">Reviews</a>
+            <a href="#contact">Contact</a>
+            <a href="#" class="btn">Book Online</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Explore Premium Cars, Built for Luxury & Performance</h1>
+            <p>Find your dream car from our wide collection of luxury, sports, and budget-friendly models. Best quality, trusted service.</p>
+            <a href="#cars" class="btn">View Cars</a>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Car">
+    </section>
+
+    <!-- CARS SECTION -->
+    <section class="cars" id="cars">
+        <h2>Our Featured Cars</h2>
+
+        <div class="car-grid">
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1503739171234-473c47e087f8" alt="">
+                <h3>BMW M4</h3>
+                <p>Rs. 70,00,000</p>
+                <a class="btn" href="#">Buy Now</a>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1518552781521-df32218ecb6a" alt="">
+                <h3>Audi A6</h3>
+                <p>Rs. 60,00,000</p>
+                <a class="btn" href="#">Buy Now</a>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d" alt="">
+                <h3>Ford Mustang</h3>
+                <p>Rs. 55,00,000</p>
+                <a class="btn" href="#">Buy Now</a>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1549921296-3c52d3d69b37" alt="">
+                <h3>Mercedes C-Class</h3>
+                <p>Rs. 65,00,000</p>
+                <a class="btn" href="#">Buy Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL SECTION -->
+    <section class="testimonial" id="testimonial">
+        <h2>What Customers Say</h2>
+
+        <div class="test-box">
+            <p>"Highly recommended! The car was in excellent condition and the staff was very helpful. Best car-buying experience!"</p>
+            <br>
+            <strong>- Rahul Mehta</strong>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-info">
+            <p><strong>📍 Address:</strong> AutoDrive Car Store, Pune, Maharashtra</p>
+            <p><strong>📞 Phone:</strong> +91 98765 12345</p>
+            <p><strong>📧 Email:</strong> support@autodrive.com</p>
+        </div>
+        <br>
+        <a href="#" class="btn">Book Online</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 AutoDrive | Premium Cars, Premium Experience
+    </footer>
+
+</body>
+</html>
